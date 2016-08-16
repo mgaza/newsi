@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/res/merged/debug/menu/activity_news_drawer.xml",
+        "source": "/home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/src/main/res/menu/activity_news_drawer.xml"
+    },
+    {
+        "merged": "/home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/res/merged/debug/menu/news.xml",
+        "source": "/home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/src/main/res/menu/news.xml"
+    }
+]

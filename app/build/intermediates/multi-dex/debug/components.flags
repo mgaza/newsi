@@ -1,0 +1,61 @@
+-injars /home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
+-outjars /home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /root/Android/Sdk/build-tools/24.0.0/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
+-dontwarn **
+-printconfiguration /home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/multi-dex/debug/components.flags
+
+
+-keep class com.firexweb.newsi.sync.Newsi {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.firexweb.newsi.NewsActivity {
+    <init>();
+}
+
+-keep class com.firexweb.newsi.DetailActivity {
+    <init>();
+}
+
+-keep class com.firexweb.newsi. {
+    <init>();
+}
+
+-keep class com.firexweb.newsi.AboutActivity {
+    <init>();
+}
+
+-keep class com.bebound.sdk.receiver.internal.BeAppReceiver {
+    <init>();
+}
+
+-keep class com.bebound.sdk.receiver.internal.ConnectivityReceiver {
+    <init>();
+}
+
+-keep class com.bebound.sdk.receiver.internal.ApplicationChangedReceiver {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

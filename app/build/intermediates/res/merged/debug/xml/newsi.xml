@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<be-app name="Newsi" apk="com.firexweb.newsi" version="1" remote="true"> <!-- ( remote = true ) because of development -->
+  <server domain="www.palsawa.com" uri="bebound" Auth="1234" https="false"/>
+  <server_operations>
+    <!-- Fetch 9 news from Palsawa -->
+    <operation name="fetch_news_by_web">
+      <request>
+        <param name="cat" type="int" min="0" max="124"/>
+        <param name="page" type="int" min="1" max="20"/>
+      </request>
+      <response>
+        <param name="news" type="array" min="0" max="31">
+          <param name="id" type="int" min="0" max="16777215"/>
+          <param name="title" type="string" min_len="0" max_len="150"/>
+          <param name="img" type="string" min_len="0" max_len="80"/>
+          <!-- We send the date as a string not a timestamp -->
+          <param name="date" type="string" min_len="0" max_len="20"/>
+        </param>
+      </response>
+    </operation>
+    <!-- Fetch 5 news from Palsawa -->
+    <operation name="fetch_news_by_sms">
+      <request>
+        <param name="cat" type="int" min="0" max="124"/>
+        <param name="page" type="int" min="1" max="20"/>
+      </request>
+      <response>
+        <param name="news" type="array" min="0" max="31">
+          <param name="id" type="int" min="0" max="16777215"/>
+          <param name="title" type="string" min_len="0" max_len="150"/>
+          <param name="img" type="string" min_len="0" max_len="80"/>
+          <!-- We send the date as a string not a timestamp -->
+          <param name="date" type="string" min_len="0" max_len="20"/>
+        </param>
+      </response>
+    </operation>
+    <!-- Fetch Article from Palsawa -->
+    <operation name="fetch_article_by_web">
+      <request>
+        <param name="id" type="int" min="0" max="16777215"/>
+      </request>
+      <response>
+        <param name="article" type="string" min_len="0" max_len="16777215"/>
+      </response>
+    </operation>
+    <!-- Fetch Article from Palsawa using SMS -->
+    <operation name="fetch_article_by_sms">
+      <request>
+        <param name="id" type="int" min="0" max="16777215"/>
+        <param name="part" type="int" min="0" max="100"/>
+      </request>
+      <response>
+        <param name="article" type="string" min_len="0" max_len="16777215"/>
+      </response>
+    </operation>
+  </server_operations>
+  <!-- Errors -->
+  <errors>
+    <param name="error" type="string" min_len="0" max_len="16777215"/>
+  </errors>
+</be-app>
