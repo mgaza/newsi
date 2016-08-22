@@ -387,6 +387,8 @@
     <string name="connectionSetting">Wataniya Connect</string>
     <string name="connectionSettingDesc">جلب البيانات بدون اتصال بالانترنت</string>
     <string name="empty_list">يتم الآن تحميل الأخبار</string>
+    <string name="error_provider_not_reached">خطأ لا يمكن الوصول لمزود الخدمة</string>
+    <string name="error_wrong_news_id">نأسف ، الخبر الذي تحاول الوصول إليه غير موجود</string>
     <string name="loading"/>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

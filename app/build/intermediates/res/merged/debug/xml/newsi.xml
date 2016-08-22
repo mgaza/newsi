@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" standalone="yes"?>
 <be-app name="Newsi" apk="com.firexweb.newsi" version="1" remote="true"> <!-- ( remote = true ) because of development -->
-  <server domain="www.palsawa.com" uri="bebound" Auth="1234" https="false"/>
+  <server domain="www.firexweb.com" uri="bebound/" Auth="1234" https="false"/>
 
   <!-- Errors -->
   <errors>
-    <errors name="error"/>
+    <errors name="PROVIDER_NOT_REACHED"/>
+    <errors name="INVALID_NEWS_ID"/>
   </errors>
 
   <server_operations>

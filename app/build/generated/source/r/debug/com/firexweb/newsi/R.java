@@ -5116,17 +5116,19 @@ containing a value of this type.
         public static final int connectionSetting=0x7f07002d;
         public static final int connectionSettingDesc=0x7f07002e;
         public static final int empty_list=0x7f07002f;
-        public static final int loading=0x7f070030;
-        public static final int navigation_drawer_close=0x7f070031;
-        public static final int navigation_drawer_open=0x7f070032;
-        public static final int request_failed=0x7f070033;
-        public static final int saveFor1Month=0x7f070034;
-        public static final int saveFor2Weeks=0x7f070035;
-        public static final int saveForAweek=0x7f070036;
-        public static final int savingSetting=0x7f070037;
-        public static final int settings_title=0x7f070038;
+        public static final int error_provider_not_reached=0x7f070030;
+        public static final int error_wrong_news_id=0x7f070031;
+        public static final int loading=0x7f070032;
+        public static final int navigation_drawer_close=0x7f070033;
+        public static final int navigation_drawer_open=0x7f070034;
+        public static final int request_failed=0x7f070035;
+        public static final int saveFor1Month=0x7f070036;
+        public static final int saveFor2Weeks=0x7f070037;
+        public static final int saveForAweek=0x7f070038;
+        public static final int savingSetting=0x7f070039;
+        public static final int settings_title=0x7f07003a;
         public static final int status_bar_notification_info_overflow=0x7f070013;
-        public static final int title_activity_news=0x7f070039;
+        public static final int title_activity_news=0x7f07003b;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f09008f;
