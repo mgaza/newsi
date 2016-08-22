@@ -172,6 +172,16 @@ public class MainSystem {
         });
     }
 
+    public static void displayToastMessage(final String text)
+    {
+        context.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
     public static void wipeNewsCache(int beforeTimeStamp) {
         newsProvider.wipeCache(beforeTimeStamp);
     }

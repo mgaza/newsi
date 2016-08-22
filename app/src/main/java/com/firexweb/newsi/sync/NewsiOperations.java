@@ -44,6 +44,7 @@ public class NewsiOperations {
                 MainSystem.trackNewNewsComing();
                 return true;
             }
+
         });
 
         request.getRequestBuilder().onFailed(new OnFailedListener() {
@@ -54,7 +55,16 @@ public class NewsiOperations {
                 MainSystem.refreshNewsAdapter();
                 return true;
             }
+
+            @Override
+            public boolean onResponseError(Context context, com.bebound.common.model.request.Request request, Response response, int responseStatusCode, String responseStatusMessage) {
+                MainSystem.displayToastMessage(responseStatusMessage);
+                MainSystem.refreshNewsAdapter();
+                return true;
+            }
         });
+
+
         Log.d(STATUS_LOG_TITLE, "We send the request!");
         request.send();
     }
@@ -96,6 +106,12 @@ public class NewsiOperations {
                 Log.e(ERROR_LOG_TITLE, "Oh shit, We Failed to fetch Article! The issue was " + requestStatusMessage);
                 MainSystem.displayToastMessage(R.string.request_failed);
                 MainSystem.refreshArticle();
+                return true;
+            }
+            @Override
+            public boolean onResponseError(Context context, com.bebound.common.model.request.Request request, Response response, int responseStatusCode, String responseStatusMessage) {
+                MainSystem.displayToastMessage(responseStatusMessage);
+                MainSystem.refreshNewsAdapter();
                 return true;
             }
         });

@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" standalone="yes"?>
 <be-app name="Newsi" apk="com.firexweb.newsi" version="1" remote="true"> <!-- ( remote = true ) because of development -->
   <server domain="www.palsawa.com" uri="bebound" Auth="1234" https="false"/>
+
+  <!-- Errors -->
+  <errors>
+    <errors name="error"/>
+  </errors>
+
   <server_operations>
     <!-- Fetch 9 news from Palsawa -->
     <operation name="fetch_news_by_web">
@@ -54,8 +60,5 @@
       </response>
     </operation>
   </server_operations>
-  <!-- Errors -->
-  <errors>
-    <param name="error" type="string" min_len="0" max_len="16777215"/>
-  </errors>
+
 </be-app>
