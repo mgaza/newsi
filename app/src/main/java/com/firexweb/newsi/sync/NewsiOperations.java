@@ -58,7 +58,7 @@ public class NewsiOperations {
 
             @Override
             public boolean onResponseError(Context context, com.bebound.common.model.request.Request request, Response response, int responseStatusCode, String responseStatusMessage) {
-                MainSystem.displayToastMessage(responseStatusMessage);
+                MainSystem.checkRequestError(responseStatusCode);
                 MainSystem.refreshNewsAdapter();
                 return true;
             }
@@ -110,7 +110,7 @@ public class NewsiOperations {
             }
             @Override
             public boolean onResponseError(Context context, com.bebound.common.model.request.Request request, Response response, int responseStatusCode, String responseStatusMessage) {
-                MainSystem.displayToastMessage(responseStatusMessage);
+                MainSystem.checkRequestError(responseStatusCode);
                 MainSystem.refreshNewsAdapter();
                 return true;
             }

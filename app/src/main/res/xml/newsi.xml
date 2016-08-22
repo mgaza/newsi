@@ -4,7 +4,8 @@
 
   <!-- Errors -->
   <errors>
-    <errors name="error"/>
+    <errors name="PROVIDER_NOT_REACHED"/>
+    <errors name="INVALID_NEWS_ID"/>
   </errors>
 
   <server_operations>

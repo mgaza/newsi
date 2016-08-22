@@ -172,16 +172,15 @@ public class MainSystem {
         });
     }
 
-    public static void displayToastMessage(final String text)
+    public static void checkRequestError(int errorCode)
     {
-        context.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
-            }
-        });
+        switch (errorCode)
+        {
+            case 63:displayToastMessage(R.string.error_provider_not_reached);break;
+            case 64:displayToastMessage(R.string.error_wrong_news_id);break;
+            default:displayToastMessage(R.string.request_failed);
+        }
     }
-
     public static void wipeNewsCache(int beforeTimeStamp) {
         newsProvider.wipeCache(beforeTimeStamp);
     }
