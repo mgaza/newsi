@@ -138,8 +138,11 @@ public class MainSystem {
             NewsiOperations.fetch_news_by_web(context, newsProvider);
         } else if (mode == Auth.MODE_GSM && watanyiaSettings.getWatanyiaConnectMode()) {
             NewsiOperations.fetch_news_by_sms(context, newsProvider);
-        } else {
+        } else if (mode == Auth.MODE_AIRPLANE || mode == Auth.MODE_OFFLINE) {
+            displayToastMessage(R.string.error_no_data);
             refreshNewsAdapter();
+        } else {
+            displayToastMessage(R.string.error_provider_not_reached);
         }
 
     }

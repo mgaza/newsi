@@ -13,6 +13,7 @@
     <string name="request_failed">خطأ: لم يتم استلام أي بيانات ، يرجى المحاولة مرة أخرى</string>
     <string name="error_provider_not_reached">خطأ لا يمكن الوصول لمزود الخدمة</string>
     <string name="error_wrong_news_id">نأسف ، الخبر الذي تحاول الوصول إليه غير موجود</string>
+    <string name="error_no_data">أنت غير متصل بمزود الخدمة أو أي شبكة لا سلكية</string>
     <string name="loading"></string>
 
     <!-- Place holders -->
