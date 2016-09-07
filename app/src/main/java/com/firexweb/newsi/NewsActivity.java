@@ -13,9 +13,7 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
-import com.bebound.sdk.BeBound;
 import com.firexweb.newsi.utilities.CatContent;
 
 
@@ -35,11 +33,6 @@ public class NewsActivity extends AppCompatActivity
         this.buildActivityLayout();
 
         // starts the main system
-
-        if (!BeBound.areBeBoundServicesFound()) {
-            Toast.makeText(this, "No STORE", Toast.LENGTH_LONG).show();
-            return;
-        }
 
         MainSystem.run(this);
     }

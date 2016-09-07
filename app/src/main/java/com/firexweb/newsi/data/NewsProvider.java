@@ -51,9 +51,16 @@ public class NewsProvider {
         for (ValueMap value : values) {
             data = new ContentValues(9);
             data.put(NewsContract.Article.COLUMN_CAT, cat);
-            data.put(NewsContract.Article.COLUMN_ARTICLE_ID, value.getInt(NewsiOperationsContract.FETCH_NEWS_ID_PARAM));
+            Integer myValue;
+            try {
+                myValue = value.getInt(NewsiOperationsContract.FETCH_NEWS_ID_PARAM);
+            } catch (Exception e){
+                myValue = Integer.valueOf(value.getString(NewsiOperationsContract.FETCH_NEWS_ID_PARAM));
+            }
+            data.put(NewsContract.Article.COLUMN_ARTICLE_ID, myValue);
+
             if (MainSystem.FETCH_ARTICLE_FOR_FUTURE_USE) {
-                NewsiOperations.fetch_article_for_future_use(value.getInt(NewsiOperationsContract.FETCH_NEWS_ID_PARAM));
+                NewsiOperations.fetch_article_for_future_use(myValue);
             }
             data.put(NewsContract.Article.COLUMN_TITLE, value.getString(NewsiOperationsContract.FETCH_NEWS_TITLE_PARAM));
             data.put(NewsContract.Article.COLUMN_MINUTE, value.getString(NewsiOperationsContract.FETCH_NEWS_DATE_PARAM).split(":")[0]);
