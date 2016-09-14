@@ -60,7 +60,7 @@ public class NewsAdapter extends CursorAdapter {
         Picasso.with(context)
                 .load(cursor.getString(4))
                 .placeholder(R.drawable.place_holder)
-                .error(R.drawable.site_logo)
+                .error(R.drawable.app_holder)
                 .into(image);
         TextView id = (TextView) view.findViewById(R.id.news_id);
         id.setText(cursor.getString(1));

@@ -31,7 +31,7 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center_vertical"
                 android:onClick="finishActivity"
-                android:src="@drawable/ic_undo_white_24dp" />
+                android:src="@drawable/back" />
         </LinearLayout>
 
         <LinearLayout

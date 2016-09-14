@@ -28,7 +28,7 @@
             android:configChanges="orientation|screenSize"
             android:parentActivityName=".NewsActivity" />
         <activity
-            android:name="."
+            android:name=".SettingsActivity"
             android:parentActivityName=".NewsActivity" />
         <activity
             android:name=".AboutActivity"

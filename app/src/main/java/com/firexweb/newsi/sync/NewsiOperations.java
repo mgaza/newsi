@@ -104,7 +104,7 @@ public class NewsiOperations {
             @Override
             public boolean onRequestFailed(Context context, com.bebound.common.model.request.Request request, int requestStatusCode, String requestStatusMessage) {
                 Log.e(ERROR_LOG_TITLE, "Oh shit, We Failed to fetch Article! The issue was " + requestStatusMessage);
-                MainSystem.displayToastMessage(R.string.request_failed);
+                //MainSystem.displayToastMessage(R.string.request_failed);
                 MainSystem.refreshArticle();
                 return true;
             }
