@@ -381,7 +381,7 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="article_date">آخر تعديل: 26-06-2016	الساعه: 11:50</string>
     <string name="article_title">تماس كهربائي يتسبب في احتراق منزل في القدس</string>
-    <string name="be_bound_sdk_version">1.0.0</string>
+    <string name="be_bound_sdk_version">1.1.0-beta5</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="connectionSetting">Wataniya Connect</string>

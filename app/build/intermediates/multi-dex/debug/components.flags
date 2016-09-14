@@ -1,7 +1,7 @@
--injars /home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
--outjars /home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/multi-dex/debug/componentClasses.jar
+-injars '/home/cbellmont/Documents/External Dev/Mohammed/Git project/newsi/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar'
+-outjars '/home/cbellmont/Documents/External Dev/Mohammed/Git project/newsi/app/build/intermediates/multi-dex/debug/componentClasses.jar'
 
--libraryjars /root/Android/Sdk/build-tools/24.0.0/lib/shrinkedAndroid.jar
+-libraryjars /home/cbellmont/Android/Sdk/build-tools/24.0.0/lib/shrinkedAndroid.jar
 
 -forceprocessing
 -dontoptimize
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
 -dontwarn **
--printconfiguration /home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/multi-dex/debug/components.flags
+-printconfiguration '/home/cbellmont/Documents/External Dev/Mohammed/Git project/newsi/app/build/intermediates/multi-dex/debug/components.flags'
 
 
 -keep class com.firexweb.newsi.sync.Newsi {

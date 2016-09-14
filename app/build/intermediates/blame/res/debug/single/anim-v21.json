@@ -1,14 +1,14 @@
 [
     {
-        "merged": "/home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/res/merged/debug/anim-v21/design_appbar_state_list_animator.xml",
-        "source": "/home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/anim-v21/design_appbar_state_list_animator.xml"
+        "merged": "/home/cbellmont/Documents/External Dev/Mohammed/Git project/newsi/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/home/cbellmont/Documents/External Dev/Mohammed/Git project/newsi/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/anim-v21/design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "/home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
-        "source": "/home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/anim-v21/design_bottom_sheet_slide_out.xml"
+        "merged": "/home/cbellmont/Documents/External Dev/Mohammed/Git project/newsi/app/build/intermediates/res/merged/debug/anim-v21/design_appbar_state_list_animator.xml",
+        "source": "/home/cbellmont/Documents/External Dev/Mohammed/Git project/newsi/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/anim-v21/design_appbar_state_list_animator.xml"
     },
     {
-        "merged": "/home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
-        "source": "/home/mohammed/Desktop/Android-Projects/Newsi/Newsi/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/anim-v21/design_bottom_sheet_slide_in.xml"
+        "merged": "/home/cbellmont/Documents/External Dev/Mohammed/Git project/newsi/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/home/cbellmont/Documents/External Dev/Mohammed/Git project/newsi/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/anim-v21/design_bottom_sheet_slide_in.xml"
     }
 ]

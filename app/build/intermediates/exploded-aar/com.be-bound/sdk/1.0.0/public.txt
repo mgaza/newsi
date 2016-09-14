@@ -1,1 +1,0 @@
-string be_bound_sdk_version
