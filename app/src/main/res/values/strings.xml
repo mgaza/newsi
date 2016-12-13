@@ -35,5 +35,13 @@
     <string name="appDesigned">Designed By: Rajab Allouh</string>
     <string name="appSite">More Info Visit: www.fireXweb.com</string>
 
+    <string name="dialog_no_bestore_content">%1$s</string>
+    <string name="dialog_no_bestore_title_specific">%1$s missing</string>
+    <string name="dialog_no_bestore_title">Be-Store missing</string>
+    <string name="dialog_no_bestore_content_specific">To use %1$s, install %2$s first</string>
+    <string name="dialog_no_bestore_download_button">DOWNLOAD</string>
+    <string name="dialog_services_uninstalled_title">Be-Store service uninstalled</string>
+    <string name="dialog_services_uninstalled_content">Be-Store service uninstalled. Please install again.</string>
+    <string name="action_ok">OK</string>
 
 </resources>

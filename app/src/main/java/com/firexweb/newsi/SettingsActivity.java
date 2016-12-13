@@ -1,7 +1,6 @@
 package com.firexweb.newsi;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -9,7 +8,7 @@ import com.firexweb.newsi.settings.CachingSettings;
 import com.rey.material.widget.RadioButton;
 import com.rey.material.widget.Switch;
 
-public class SettingsActivity extends AppCompatActivity {
+public class SettingsActivity extends BaseActivity {
     private final String SETTINGS_LOG = "WATANYIA_SETTINGS";
     private com.rey.material.widget.Switch watanyiaSettings;
     private RadioButton cachBtns[] = new RadioButton[3];

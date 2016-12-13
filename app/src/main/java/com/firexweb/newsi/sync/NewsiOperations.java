@@ -10,8 +10,12 @@ import com.bebound.common.model.request.Response;
 import com.firexweb.newsi.MainSystem;
 import com.firexweb.newsi.R;
 import com.firexweb.newsi.data.NewsProvider;
+import com.google.gson.GsonBuilder;
 
 public class NewsiOperations {
+    private static String TAG = NewsiOperations.class.getSimpleName();
+
+
     private static String STATUS_LOG_TITLE = "Request Status => ";
     private static String ERROR_LOG_TITLE = "Error Occurred!";
     private static String SUCCESS_LOG_TITLE = "Succeeded ";
@@ -29,6 +33,7 @@ public class NewsiOperations {
         Log.d(STATUS_LOG_TITLE, "We will Establish Request Now!");
         // Let's make a new requesst
         Request request = new Request(context, operation);
+
         request.getRequestBuilder().put(NewsiOperationsContract.OPERATION_CAT_PARAM, MainSystem.LIST_CAT);
         request.getRequestBuilder().put(NewsiOperationsContract.OPERATION_PAGE_PARAM, MainSystem.LIST_PAGE);
         Log.d(STATUS_LOG_TITLE, "Cat is => " + MainSystem.LIST_CAT + " & Page is => " + MainSystem.LIST_PAGE);
@@ -36,6 +41,8 @@ public class NewsiOperations {
             @Override
 
             public boolean onSuccess(Context context, Response response, com.bebound.common.model.request.Request request) {
+                Log.d(TAG, "-onSuccess request fetch_news" + new GsonBuilder().create().toJson(request));
+                Log.d(TAG, "-onSuccess response fetch_news" + new GsonBuilder().create().toJson(response));
                 Log.d(SUCCESS_LOG_TITLE, "Request succeeded! We have received response!");
                 ValueMap values[] = response.getResponseParameters().getArray(NewsiOperationsContract.FETCH_NEWS_ARRAY_PARAM);
                 Log.d(SUCCESS_LOG_TITLE, "We Got => " + values.length);
@@ -50,6 +57,7 @@ public class NewsiOperations {
         request.getRequestBuilder().onFailed(new OnFailedListener() {
             @Override
             public boolean onRequestFailed(Context context, com.bebound.common.model.request.Request request, int requestStatusCode, String requestStatusMessage) {
+                Log.d(TAG, "-onSuccess request fetch_news" + new GsonBuilder().create().toJson(request));
                 Log.e(ERROR_LOG_TITLE, "Oh shit, Request failed! The issue was " + requestStatusMessage);
                 MainSystem.displayToastMessage(R.string.request_failed);
                 MainSystem.refreshNewsAdapter();
@@ -58,6 +66,8 @@ public class NewsiOperations {
 
             @Override
             public boolean onResponseError(Context context, com.bebound.common.model.request.Request request, Response response, int responseStatusCode, String responseStatusMessage) {
+                Log.d(TAG, "-onSuccess request fetch_news " + new GsonBuilder().create().toJson(request));
+                Log.d(TAG, "-onSuccess response fetch_news " + new GsonBuilder().create().toJson(response));
                 MainSystem.checkRequestError(responseStatusCode);
                 MainSystem.refreshNewsAdapter();
                 return true;
@@ -91,6 +101,8 @@ public class NewsiOperations {
             @Override
 
             public boolean onSuccess(Context context, Response response, com.bebound.common.model.request.Request request) {
+                Log.d(TAG, "-onSuccess request " + new GsonBuilder().create().toJson(request));
+                Log.d(TAG, "-onSuccess response " + new GsonBuilder().create().toJson(response));
                 Log.d(SUCCESS_LOG_TITLE, "Great! Article has been received! ");
                 String article = response.getResponseParameters().getString(NewsiOperationsContract.FETCH_ARTICLE_PARAM);
                 Log.d(SUCCESS_LOG_TITLE, "Our Article is => " + article);
@@ -105,11 +117,14 @@ public class NewsiOperations {
             public boolean onRequestFailed(Context context, com.bebound.common.model.request.Request request, int requestStatusCode, String requestStatusMessage) {
                 Log.e(ERROR_LOG_TITLE, "Oh shit, We Failed to fetch Article! The issue was " + requestStatusMessage);
                 //MainSystem.displayToastMessage(R.string.request_failed);
+                Log.d(TAG, "-onSuccess request " + new GsonBuilder().create().toJson(request));
                 MainSystem.refreshArticle();
                 return true;
             }
             @Override
             public boolean onResponseError(Context context, com.bebound.common.model.request.Request request, Response response, int responseStatusCode, String responseStatusMessage) {
+                Log.d(TAG, "-onSuccess request " + new GsonBuilder().create().toJson(request));
+                Log.d(TAG, "-onSuccess response " + new GsonBuilder().create().toJson(response));
                 MainSystem.checkRequestError(responseStatusCode);
                 MainSystem.refreshNewsAdapter();
                 return true;
@@ -132,6 +147,8 @@ public class NewsiOperations {
             @Override
 
             public boolean onSuccess(Context context, Response response, com.bebound.common.model.request.Request request) {
+                Log.d(TAG, "-onSuccess request fetch_article_for_future_use" + new GsonBuilder().create().toJson(request));
+                Log.d(TAG, "-onSuccess response fetch_article_for_future_use" + new GsonBuilder().create().toJson(response));
                 Log.d(SUCCESS_LOG_TITLE, "Great! Article has been received! ");
                 String article = response.getResponseParameters().getString(NewsiOperationsContract.FETCH_ARTICLE_PARAM);
                 Log.d(SUCCESS_LOG_TITLE, "Our Article is => " + article);

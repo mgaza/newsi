@@ -16,7 +16,7 @@ public class Newsi extends Application {
         BeBound.init(this, new BeAppConfig() {
             @Override
             public String getBeAppKey() {
-                return "dy9eiDKyuqa42EhnFTrquyXQVPjJ5G7FTs3g7SVeKFFcBhcO8vk14Q==";
+                return "dy9ejDW1uqa42EhnFTrquyXQVPjJ5G7FTs3g7SVeKFFcBhcO9Po8";
             }
 
             @Override
