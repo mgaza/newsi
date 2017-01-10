@@ -39,14 +39,6 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 
-//import com.afollestad.materialdialogs.MaterialDialog;
-//import com.github.badoualy.ui.config.AppConfig;
-//import com.github.badoualy.ui.util.DialogUtils;
-
-/**
- * Created by MINH NGUYEN on 12/1/2016.
- */
-
 public class BaseActivity extends AppCompatActivity {
     protected final String TAG = getClass().getSimpleName();
 

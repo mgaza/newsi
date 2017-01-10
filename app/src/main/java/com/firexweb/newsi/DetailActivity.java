@@ -3,6 +3,7 @@ package com.firexweb.newsi;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
@@ -16,7 +17,7 @@ import com.firexweb.newsi.utilities.ToastContent;
 import com.firexweb.newsi.utilities.URLBuilder;
 import com.squareup.picasso.Picasso;
 
-public class DetailActivity extends BaseActivity {
+public class DetailActivity extends AppCompatActivity {
     private int id;
     private boolean isArticleFinishLoading = false;
     private String cat;

@@ -7,18 +7,17 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.bebound.sdk.BeBound;
 import com.firexweb.newsi.utilities.CatContent;
 
 
-public class NewsActivity extends BaseActivity
+public class NewsActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private Toolbar toolbar;
@@ -35,11 +34,8 @@ public class NewsActivity extends BaseActivity
 
         // starts the main system
 
-        if (BeBound.areBeBoundServicesFound()) {
-            MainSystem.run(this);
-        } else {
-            Log.w(TAG, "onCreate: Be-Bound services not found");
-        }
+        MainSystem.run(this);
+
     }
 
     @Override

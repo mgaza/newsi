@@ -28,7 +28,9 @@ public class Newsi extends Application {
             public int getBeAppManifestResId() {
                 return R.xml.newsi;
             }
-        });
+        }
+                , "http://www.firexweb.com:80/bebound/" , "asdf"
+        );
     }
 
 }
